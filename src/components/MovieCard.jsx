@@ -1,16 +1,18 @@
 import { useEffect } from "react";
+
 import { useState } from "react";
 
 export default function MovieCard(prop) {
   const BASE_URL = "https://api.themoviedb.org/3/";
-  const API_key = "d835622295b89133ef8c0275463d9979";
+  const apiKey = import.meta.env.VITE_API_key;
+  console.log(apiKey);
   const imgUrl = "https://image.tmdb.org/t/p/w400";
   // https://api.themoviedb.org/3/movie/popular?api_key=d835622295b89133ef8c0275463d9979
   const [movieData, setMovieData] = useState([]);
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(
-        `${BASE_URL}movie/popular?api_key=${API_key}`
+        `${BASE_URL}movie/popular?api_key=${apiKey}`
       );
       const data = await response.json();
 
