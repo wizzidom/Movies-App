@@ -10,6 +10,10 @@ export default function Navbar() {
           </ul>
         </div>
       </nav>
+      <div className="search">
+        <input type="text" placeholder="Search movies" />
+        <button type="submit">Search</button>
+      </div>
     </header>
   );
 }

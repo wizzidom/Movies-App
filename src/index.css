@@ -29,3 +29,48 @@ header nav {
   font-family: Ocean-Trace;
   font-size: 30px;
 }
+.search {
+  padding: 20px;
+  text-align: center;
+}
+.search input {
+  padding: 10px;
+  width: 200px;
+}
+.search > button {
+  margin-left: 7px;
+  background: black;
+  color: lime;
+  font-weight: bolder;
+  cursor: pointer;
+
+  padding: 10px 15px;
+}
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+
+  color: lime;
+  background: linear-gradient(to top, black, black);
+
+  margin-bottom: 5px;
+}
+
+.movie-img img {
+  width: 100%;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  justify-content: center;
+}
+.description > h4 {
+  margin-bottom: 5px;
+}
+.description {
+  background: linear-gradient(to bottom, black, transparent);
+  margin: 10px;
+}
