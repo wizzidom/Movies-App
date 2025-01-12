@@ -37,12 +37,14 @@ header nav {
   padding: 10px;
   width: 200px;
 }
-.search > button {
+button {
   margin-left: 7px;
   background: black;
   color: lime;
   font-weight: bolder;
   cursor: pointer;
+  border: none;
+  border-radius: 5px;
 
   padding: 10px 15px;
 }
